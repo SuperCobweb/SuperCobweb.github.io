@@ -48,7 +48,7 @@
   isHome: true,
   isHighlightShrink: undefined,
   isToc: false,
-  postUpdate: '2022-07-06 11:15:13'
+  postUpdate: '2022-07-06 11:22:45'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -153,7 +153,7 @@ class Solution &#123;    public List&lt;List&lt;Integer&gt;&gt; minimumAbsDiffer
 
 将n转为字符串，从后往前遍历找到第一个升序的两个点的位置，i - 1 和 i，从i - 1 位置之后找到一个大于i - 1 位置的最小元素交换，之后的元素依据大小排列即可。
 自己的代码，当时思路没理清楚，又臭又长
-class Solution &#123;    public int nextGreaterElement(int n) &#123;        String s = String.valueOf(n);        n = s.length();        int[] cnt = new int[10];        int maxx = 0;        int i, e = 0;        for (i= n - 1; i &gt;= 0; i--)&#123;            e = s.charAt(i) - &#x27;0&#x27;;            cnt[e]++;            if  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/07/02/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="搭建个人博客">搭建个人博客</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-02T09:13:20.000Z" title="发表于 2022-07-02 17:13:20">2022-07-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%AB%99/">网站</a></span></div><div class="content">用hexo搭建个人博客比自己写一个网站来的轻松
+class Solution &#123;    public int nextGreaterElement(int n) &#123;        String s = String.valueOf(n);        n = s.length();        int[] cnt = new int[10];        int maxx = 0;        int i, e = 0;        for (i= n - 1; i &gt;= 0; i--)&#123;            e = s.charAt(i) - &#x27;0&#x27;;            cnt[e]++;            if  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/07/02/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="搭建个人博客">搭建个人博客</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-02T09:13:20.000Z" title="发表于 2022-07-02 17:13:20">2022-07-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BB%BA%E7%AB%99/">建站</a></span></div><div class="content">用hexo搭建个人博客比自己写一个网站来的轻松
 优点：纯静态文件，不依赖服务器和数据库
 缺点：对笔者电脑环境的依赖过大，换一台电脑需要重新配置环境
 我使用Hexo+github&amp;云服务的模式部署的。
